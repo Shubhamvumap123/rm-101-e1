@@ -1,7 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "./taskHeader.module.css";
 
-const TaskHeader = () => {
+const TaskHeader = ({ tasks }) => {
   // sample values to be replaced
   let totalTask = 0;
   let unCompletedTask = 0;
@@ -10,7 +10,7 @@ const TaskHeader = () => {
   return (
     <div data-testid="task-header" className={styles.taskHeader}>
       <b data-testid="header-remaining-task">{unCompletedTask}</b>
-      <b data-testid="header-total-task">{totalTask}</b>
+      <b data-testid="header-total-task">{tasks}</b>
     </div>
   );
 };
