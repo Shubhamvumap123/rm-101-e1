@@ -27,7 +27,7 @@ const TaskApp = () => {
   return (
     <div data-testid="task-app" className={styles.taskApp}>
       {/* Header */}
-      <TaskHeader task={tasks} />
+      <TaskHeader tasks={tasks} />
       <AddTask
         handleChange={handleChange}
         submitTask={submitTask}
